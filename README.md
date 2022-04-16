@@ -76,16 +76,16 @@ test_filtered_data:
 This method is used to test filtered words functionality.It asserts true when len of filtered!=0  
 
 test_vectorize:  
-This method is used to test vectorize functionality. It asserts true when len of vector!=0. 
+This method is used to test vectorize functionality. It asserts true when len of vector!=0. I'm slicing the data because it takes more time.
 
 test-knnclassifier:  
-This method is used to test knnclassifier functionality. It asserts true when the function is calling.  
+This method is used to test knnclassifier functionality. It asserts true when the function is calling. I'm slicing the data because it takes more time.
 
 test_knnPredictor:  
-This method is used to test knnPredictor functionality. It asserts True when w!=0  
+This method is used to test knnPredictor functionality. It asserts True when w!=0. I'm slicing the data because it takes more time.
 
 test_Display:  
-This method is used to test Display functionality. It asserts True when the returned value to zero.  
+This method is used to test Display functionality. It asserts True when the returned value to zero. I'm slicing the data because it takes more time. 
 
 Assumptions:  
 In the KnnClassifier, I'm using the default neighbors (n=5). 
