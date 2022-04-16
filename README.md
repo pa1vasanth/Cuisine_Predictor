@@ -11,7 +11,7 @@ pipenv run python project2.py --N 5 --ingredient "eggs"  --ingredient "romaine l
 
 project2.py: In this file all functions and modules are defined.  
 
-###Python Functions:  
+Python Functions:  
 1.Input data function  
 2.Filtered data function  
 3.Vectorization function  
@@ -21,7 +21,7 @@ project2.py: In this file all functions and modules are defined.
 
 The cd is cs5293sp22-Project2; I'm listing project2 for the rootpath.  
 
-###Required Python Packages:  
+Required Python Packages:  
 1.Pandas:For the Dataframe creation.  
 2.Json: For the importing of data and to get the required output format.  
 3.nltk: For the stop words filtering and flattening the lists.  
@@ -31,44 +31,44 @@ The cd is cs5293sp22-Project2; I'm listing project2 for the rootpath.
   metrics.pairwise: for the cosine similarity. 
 6.argparse: For the arguments passing.  
 
-###Functions:  
+Functions:  
 
-###Input data function:(input_data()):  
+Input data function:(input_data()):  
 1.This function extracts the data from data.json file.  
 2.In this I'm converting it to dataFrame and removing the duplicate id's.  
 3.I'm returning the filtered data.  
 
-###Filtered data function(filtered_words()):  
+Filtered data function(filtered_words()):  
 1.In this function; I'm making a list of all ingredients with no dupliacates.  
 2.I'm taking input as data returned from input-data() function   
 3.I'm returning the filtered_words (all ingredients)  
 
-###Vectorize function(vectorize()):  
+Vectorize function(vectorize()):  
 1.This function takes the input data and ingredient data.  
 2.This function is kind of vectorization, which will return the count of each ingredient(in this case either 1 or 0)  
 3.It returns the count dataframe and count list data.  
 
-###Knn Classification function(knnClassifier):  
+Knn Classification function(knnClassifier):  
 1.This function builds the training model using knn neighbor algorithm.  
 2.It takes the count dataframe and input data as input.  
 3.It returns the knn model which generated from the data.  
 
-###Knn Predictor(knnPredictor):  
+Knn Predictor(knnPredictor):  
 1.This function predicts the given input and gives the nearest neighbors.  
 2.In this function i'm generating a count list similar to the one generated in vectorization function and converted to dataframe.  
 3.Using the prediction algorithm; returning the score,cuisine,input count list and matchids.  
 
-###Display Function(Display()):  
+Display Function(Display()):  
 1.This Function is used to print the output in required format.  
 2.Using Cosine similarity module I'm finding similarity btw the input count list and match_id list  
 3.I'm returning zero for the test case.  
 
-###Main Function  
+Main Function  
 1.The execution of project starts.  
 2.All input arguments are parsed in this file.The arguments below are parsed  
 --N --ingredient  
 
-###Test Cases:  
+Test Cases:  
 test_input_data:  
 This method is used to test input_files functionality.It asserts true when the len(data)!=0.  
 
@@ -87,14 +87,14 @@ This method is used to test knnPredictor functionality. It asserts True when w!=
 test_Display:  
 This method is used to test Display functionality. It asserts True when the returned value to zero.  
 
-###Assumptions:  
+Assumptions:  
 In the KnnClassifier, I'm using the default neighbors (n=5). 
 
-###Bugs:  
+Bugs:  
 Some times the closest id isn't coming in descending order.  
 For Contrast combinations The closest Id not coming.  
 
-###References:  
+References:  
 https://stackoverflow.com/questions/58460304/vectorize-a-list-of-words-by-a-vector-of-frequencies-of-the-words   
 https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html  
 https://stackoverflow.com/questions/18424228/cosine-similarity-between-2-number-lists  
