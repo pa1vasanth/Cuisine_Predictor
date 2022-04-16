@@ -95,5 +95,9 @@ Bugs:
 Some times the closest id isn't coming in descending order.
 For Contrast combinations The closest Id not coming.
 
-I increased the instance to 8gb in gcp.
+References:
+https://stackoverflow.com/questions/58460304/vectorize-a-list-of-words-by-a-vector-of-frequencies-of-the-words
+https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
+
+I increased the instance to 8gb in gcp to execute.
 
