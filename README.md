@@ -92,7 +92,7 @@ In the KnnClassifier, I'm using the default neighbors (n=5).
 
 Bugs:  
 Some times the closest id isn't coming in descending order.  
-For Contrast combinations The closest Id not coming.  
+For Contrast combinations The closest Id score is becoming zero.
 
 References:  
 https://stackoverflow.com/questions/58460304/vectorize-a-list-of-words-by-a-vector-of-frequencies-of-the-words   
