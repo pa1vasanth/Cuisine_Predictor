@@ -30,6 +30,7 @@ Required Python Packages:
   KneighborsClassifier: For the knn prediction algorithm.  
   metrics.pairwise: for the cosine similarity. 
 6.argparse: For the arguments passing.  
+7. warnings : to ignore the warnings
 
 Functions:  
 
