@@ -19,7 +19,7 @@ Python Functions:
 5.Knn Predictor function  
 6.Display function  
 
-The cd is cs5293sp22-Project2; I'm listing project2 for the rootpath.  
+The cd is cs5293sp22-Project2.  
 
 Required Python Packages:  
 1.Pandas:For the Dataframe creation.  
@@ -70,6 +70,8 @@ Main Function
 --N --ingredient  
 
 Test Cases:  
+command line: pipenv run python -m pytest  
+
 test_input_data:  
 This method is used to test input_files functionality.It asserts true when the len(data)!=0.  
 
